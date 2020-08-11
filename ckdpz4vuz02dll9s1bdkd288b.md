@@ -1,6 +1,6 @@
 ## Data Lake - 5 Major Principles
 
-In the [previous](https://devlit.hashnode.dev/data-warehouse-the-minimal-architectural-approach-ckdpsu53c01vmkbs1bi0n081t) we understood what is a data warehouse and it's architecture. In this post, we are going to explore Data Lake.
+In the [previous](https://devlit.hashnode.dev/data-warehouse-the-minimal-architectural-approach-ckdpsu53c01vmkbs1bi0n081t) post we understood what is a data warehouse and it's architecture. In this post, we are going to explore Data Lake.
 
 # Data Lake
 
