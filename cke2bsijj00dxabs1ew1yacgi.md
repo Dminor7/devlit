@@ -27,7 +27,7 @@ But what type of stories to write? Hmmm....... 🤔
 # Let us see, how hashtags are performing?
 ### We will get a brief idea of content that mostly engage users over twitter.
 
-<iframe width="1200" height="1400" src="https://datastudio.google.com/embed/reporting/88e7cbb5-333d-4b23-9462-006651cc365e/page/PrfcB" frameborder="0" style="border:0;width:100%" allowfullscreen></iframe>
+<iframe width="1200" height="1500" src="https://datastudio.google.com/embed/reporting/88e7cbb5-333d-4b23-9462-006651cc365e/page/PrfcB" frameborder="0" style="border:0;width:100%" allowfullscreen></iframe>
 
 
 <br/>
@@ -42,7 +42,7 @@ But only hashtags don't give the correct picture. So I extracted stories URL's t
 I extracted keywords that are in the title of stories - from the URL path and blend it with the user engagement metrics by tweet-id. Below you can play with the charts, and know which keywords in the title engage users more and what is trending as well.
 
 
-<iframe width="1200" height="1600" src="https://datastudio.google.com/embed/reporting/88e7cbb5-333d-4b23-9462-006651cc365e/page/pHgcB" frameborder="0" style="border:0;width:100%" allowfullscreen></iframe>
+<iframe width="1200" height="1700" src="https://datastudio.google.com/embed/reporting/88e7cbb5-333d-4b23-9462-006651cc365e/page/pHgcB" frameborder="0" style="border:0;width:100%" allowfullscreen></iframe>
 
 
 <br/>
