@@ -71,7 +71,7 @@ cricket, what does the US have? You can play with such analogies and similaritie
 #### Okay, my next article will be definitely based on data science or building rest API with python. 
 
 ---
-Hope you like this story. I am thinking of refreshing those charts on a weekly basis if you want the same please do provide your feedback in the comments below and subscribe for the news-later for updates. Meanwhile, I'll have my warm tulsi tea. Thank you. 
+Hope you like this story. I am thinking of refreshing those charts on a weekly basis if you want the same please do provide your feedback in the comments below and subscribe to the newsletter for updates. Meanwhile, I'll have my warm tulsi tea. Thank you. 
 
 
 ![tea.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1597898690989/VKySStwKn.png)
