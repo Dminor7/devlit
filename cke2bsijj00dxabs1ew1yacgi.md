@@ -16,7 +16,7 @@ The source of these answers is from twitter - I scraped tweets **since UTC 2020-
 ### Identifying when to tweet about our blog or stories by knowing when users are most active. 
 ##### **Note:** Time is in UTC format.
 
-<iframe width="1200" height="2060" src="https://datastudio.google.com/embed/reporting/88e7cbb5-333d-4b23-9462-006651cc365e/page/j1UcB" frameborder="0" style="border:0;width:100%" allowfullscreen></iframe>
+<iframe width="1200" height="2080" src="https://datastudio.google.com/embed/reporting/88e7cbb5-333d-4b23-9462-006651cc365e/page/j1UcB" frameborder="0" style="border:0;width:100%" allowfullscreen></iframe>
 
 
 #### Seems like tweets will get more engagement when posted on **Friday** around **13:00**. 
@@ -42,7 +42,7 @@ But only hashtags don't give the correct picture. So I extracted stories URL's t
 I extracted keywords that are in the title of stories - from the URL path and blend it with the user engagement metrics by tweet-id. Below you can play with the charts, and know which keywords in the title engage users more and what is trending as well.
 
 
-<iframe width="1200" height="1650" src="https://datastudio.google.com/embed/reporting/88e7cbb5-333d-4b23-9462-006651cc365e/page/pHgcB" frameborder="0" style="border:0;width:100%" allowfullscreen></iframe>
+<iframe width="1200" height="1700" src="https://datastudio.google.com/embed/reporting/88e7cbb5-333d-4b23-9462-006651cc365e/page/pHgcB" frameborder="0" style="border:0;width:100%" allowfullscreen></iframe>
 
 
 <br/>
