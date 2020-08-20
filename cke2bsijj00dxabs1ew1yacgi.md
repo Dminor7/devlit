@@ -8,14 +8,14 @@ The source of these answers is from twitter - I scraped tweets **since UTC 2020-
 
 # How is the platform performing since the beta launch?
 
-<iframe width="1200" height="780" src="https://datastudio.google.com/embed/reporting/88e7cbb5-333d-4b23-9462-006651cc365e/page/MyKcB" frameborder="0" style="border:0" allowfullscreen></iframe>
 
+<iframe src="https://datastudio.google.com/embed/reporting/88e7cbb5-333d-4b23-9462-006651cc365e/page/MyKcB" frameborder="0"  height="700" style="width:100%" ></iframe>
 ---
 # User Engagement?
 ### Identifying when to tweet about our blog or stories by knowing when users are most active. 
 ##### **Note:** Time is in UTC format.
 
-<iframe width="1200" height="3450" src="https://datastudio.google.com/embed/reporting/88e7cbb5-333d-4b23-9462-006651cc365e/page/j1UcB" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe height="2450" width="800" src="https://datastudio.google.com/embed/reporting/88e7cbb5-333d-4b23-9462-006651cc365e/page/j1UcB" frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
 
 
 #### Seems like tweets will get more engagement when posted on **Friday** around **13:00**. 
@@ -26,7 +26,7 @@ But what type of stories to write? Hmmm....... 🤔
 # Let us see, how hashtags are performing?
 ### We will get a brief idea of content that mostly engage users over twitter.
 
-<iframe width="1200" height="2010" src="https://datastudio.google.com/embed/reporting/88e7cbb5-333d-4b23-9462-006651cc365e/page/PrfcB" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe  height="1500" width="800" src="https://datastudio.google.com/embed/reporting/88e7cbb5-333d-4b23-9462-006651cc365e/page/PrfcB" frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
 
 
 <br/>
@@ -41,7 +41,7 @@ But only hashtags don't give the correct picture. So I extracted stories URL's t
 I extracted keywords that are in the title of stories - from the URL path and blend it with the user engagement metrics by tweet-id. Below you can play with the charts, and know which keywords in the title engage users more and what is trending as well.
 
 
-<iframe width="1200" height="2610" src="https://datastudio.google.com/embed/reporting/88e7cbb5-333d-4b23-9462-006651cc365e/page/pHgcB" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe  width = "700" height="1500" src="https://datastudio.google.com/embed/reporting/88e7cbb5-333d-4b23-9462-006651cc365e/page/pHgcB" frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
 
 
 <br/>
@@ -55,16 +55,16 @@ As I wanted my next story related to python. Using this text corpus of tweets, h
 - Lastly, finding some analogies and similarities between words.
 
 
-<iframe width="1200" height="600" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1597895304920/EjjWnjgQ2.png" 
-   frameborder="0" style="border:0" allowfullscreen></iframe>
-<iframe width="1200" height="890" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1597895923401/QmYZxZ1VD.png 
-   " frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe  height="600" width="800" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1597895304920/EjjWnjgQ2.png" 
+   frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
+<iframe  height="890"  width="800"src="https://cdn.hashnode.com/res/hashnode/image/upload/v1597895923401/QmYZxZ1VD.png 
+   " frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
 
 - Now finding analogy and similarity. The word embedding approach is also able to capture multiple different degrees of similarity between words.
 Semantic patterns can be reproduced using vector arithmetics. Thus, we could also use word2vec to solve analogies. For example, If India has
 cricket, what does the US have? You can play with such analogies and similarities with a pre-trained model online [here](https://editor.p5js.org/ml5/sketches/Word2Vec_Interactive)
 
-<iframe width="920" height="779" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1597895964264/mWqpDZLNB.png" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe  height="779" width="800" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1597895964264/mWqpDZLNB.png" frameborder="0" style="border:0" allowfullscreen style="width:100%"></iframe>
 
 
 #### Okay, my next article will be definitely based on data science or building rest API with python. 
