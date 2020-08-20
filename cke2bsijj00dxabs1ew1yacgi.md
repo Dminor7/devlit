@@ -1,5 +1,7 @@
 ## Twitter Analysis of @Hashnode Tweets
 
+EDIT: To view charts don't use incognito mode and also don't use mobile devices. Sorry!!
+
 On Tuesday morning while drinking my warm tulsi tea and reading stories and browsing on @hashnode a thought came while watching my blog analytics dashboard that I have less engagement and reactions and I am desperate about the #HashnodeGiveaway challenge 😂  don't know why? Maybe because I am first time blogging. So below is my 16hrs of time invested into answering some questions that can increase user engagement on twitter and could lead them to the Hashnode platform increasing the reactions on stories.
 
 The source of these answers is from twitter - I scraped tweets **since UTC 2020-06-23 18:30:18 until UTC 2020-08-19 18:08:57** based on **query = "hashnode" OR @hashnode  OR #hashnode AND -is:retweet** referring this [twitter doc](https://developer.twitter.com/en/docs/twitter-api/tweets/search/integrate/build-a-rule) that gave me ~4K tweets.  So let us start by answering some questions. The charts below are interactive you can search, pick a date range, and sort the data by hovering over the charts and clicking the sort button on the top right corner. All set so let's start!!
