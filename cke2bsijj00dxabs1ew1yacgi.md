@@ -60,7 +60,7 @@ As I wanted my next story related to python. Using this text corpus of tweets, h
 
 - Now finding analogy and similarity. The word embedding approach is also able to capture multiple different degrees of similarity between words.
 Semantic patterns can be reproduced using vector arithmetics. Thus, we could also use word2vec to solve analogies. For example, If India has
-cricket, what does the US have? You can play with such analogies and similarities with a pre-trained model online [here] (https://editor.p5js.org/ml5/sketches/Word2Vec_Interactive)
+cricket, what does the US have? You can play with such analogies and similarities with a pre-trained model online [here](https://editor.p5js.org/ml5/sketches/Word2Vec_Interactive)
 
 <iframe width="920" height="779" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1597895964264/mWqpDZLNB.png" frameborder="0" style="border:0" allowfullscreen></iframe>
 
