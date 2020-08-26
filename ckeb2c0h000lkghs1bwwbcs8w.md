@@ -28,77 +28,136 @@ const dfd = require("danfojs-node")
 s = new dfd.Series([1, 3, 5, undefined, 6, 8])
 s.print()
 ```
+<div style="overflow: auto; max-height: 300px;">
+    <table class="df-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="int32">0</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr>
+            <th>0</th>
+            <td class="int32">1</td>
+          </tr>
+        
+          <tr>
+            <th>1</th>
+            <td class="int32">3</td>
+          </tr>
+        
+          <tr>
+            <th>2</th>
+            <td class="int32">5</td>
+          </tr>
+        
+          <tr>
+            <th>3</th>
+            <td class="int32">NaN</td>
+          </tr>
+        
+          <tr>
+            <th>4</th>
+            <td class="int32">6</td>
+          </tr>
+        
+          <tr>
+            <th>5</th>
+            <td class="int32">8</td>
+          </tr>
+        
+      </tbody>
+    </table>
+    </div>
 
-```
-//output
-╔═══╤══════════════════════╗
-║   │ 0                    ║
-╟───┼──────────────────────╢
-║ 0 │ 1                    ║
-╟───┼──────────────────────╢
-║ 1 │ 3                    ║
-╟───┼──────────────────────╢
-║ 2 │ 5                    ║
-╟───┼──────────────────────╢
-║ 3 │ NaN                  ║
-╟───┼──────────────────────╢
-║ 4 │ 6                    ║
-╟───┼──────────────────────╢
-║ 5 │ 8                    ║
-╚═══╧══════════════════════╝
-```
----
-### Reading JSON data and vector operations
+<h2>Reading JSON data and vector operations</h2>
 
 ```
 const json_data = [{ A: 0.4612, B: 4.28283, C: -1.509, D: -1.1352 },
             { A: 0.5112, B: -0.22863, C: -3.39059, D: 1.1632 },
             { A: 0.6911, B: -0.82863, C: -1.5059, D: 2.1352 },
             { A: 0.4692, B: -1.28863, C: 4.5059, D: 4.1632 }]
-
-df = new dfd.DataFrame(json_data)
-// Addition. Similarly we can use sub, div, mul, pow
+df = new dfd.DataFrame(json_data) 
+ // Adding to series object, can use sub, mul, div, and pow
 df['A'].add(df['B']).print()
 df['A'].pow(2).print()
-
-// Max value 
-console.log(df['C'].max())
+// Maximum value of C
+console.log(df['C'].max()) // 4.505899
 ```
-```
-// output
 
-// Add A and B
 
-╔═══╤══════════════════════╗
-║   │ A                    ║
-╟───┼──────────────────────╢
-║ 0 │ 4.744029998779297    ║
-╟───┼──────────────────────╢
-║ 1 │ 0.2825700044631958   ║
-╟───┼──────────────────────╢
-║ 2 │ -0.13752996921539307 ║
-╟───┼──────────────────────╢
-║ 3 │ -0.8194299936294556  ║
-╚═══╧══════════════════════╝
-
-// Square of A
-
-╔═══╤══════════════════════╗
-║   │ A                    ║
-╟───┼──────────────────────╢
-║ 0 │ 0.21270543336868286  ║
-╟───┼──────────────────────╢
-║ 1 │ 0.2613254487514496   ║
-╟───┼──────────────────────╢
-║ 2 │ 0.4776192009449005   ║
-╟───┼──────────────────────╢
-║ 3 │ 0.22014862298965454  ║
-╚═══╧══════════════════════╝
-
-// Max of C
-
-4.505899
-```
+<div style="overflow: auto; max-height: 300px;">
+<h3>Add A and B</h3>
+    <table class="df-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="float32">A</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr>
+            <th>0</th>
+            <td class="float32">4.744029998779297</td>
+          </tr>
+        
+          <tr>
+            <th>1</th>
+            <td class="float32">0.2825700044631958</td>
+          </tr>
+        
+          <tr>
+            <th>2</th>
+            <td class="float32">-0.13752996921539307</td>
+          </tr>
+        
+          <tr>
+            <th>3</th>
+            <td class="float32">-0.8194299936294556</td>
+          </tr>
+        
+      </tbody>
+    </table>
+    </div>
+<br>
+    <div style="overflow: auto; max-height: 300px;">
+<h3>A Square</h3>
+    <table class="df-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="float32">A</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr>
+            <th>0</th>
+            <td class="float32">0.21270543336868286</td>
+          </tr>
+        
+          <tr>
+            <th>1</th>
+            <td class="float32">0.2613254487514496</td>
+          </tr>
+        
+          <tr>
+            <th>2</th>
+            <td class="float32">0.4776192009449005</td>
+          </tr>
+        
+          <tr>
+            <th>3</th>
+            <td class="float32">0.22014862298965454</td>
+          </tr>
+        
+      </tbody>
+    </table>
+    </div>
+ 
 ---
 ### Reading CSV file from URL
 
@@ -114,51 +173,101 @@ dfd.read_csv("https://raw.githubusercontent.com/curran/data/gh-pages/jsLibraries
   })
 
 ```
-```
-//output
 
-╔═══╤═══════════════════╤═══════════════════╤═══════════════════╗
-║   │ Library           │ Minified File...  │ Github Stars      ║
-╟───┼───────────────────┼───────────────────┼───────────────────╢
-║ 0 │ Knockout.js       │ 17                │ 5036              ║
-╟───┼───────────────────┼───────────────────┼───────────────────╢
-║ 1 │ Angular.js        │ 106               │ 24580             ║
-╟───┼───────────────────┼───────────────────┼───────────────────╢
-║ 2 │ Ember.js          │ 71                │ 10368             ║
-╟───┼───────────────────┼───────────────────┼───────────────────╢
-║ 3 │ Can.js            │ 82                │ 928               ║
-╟───┼───────────────────┼───────────────────┼───────────────────╢
-║ 4 │ React.js          │ 123               │ 7015              ║
-╚═══╧═══════════════════╧═══════════════════╧═══════════════════╝
-```
+
+
+<div style="overflow: auto; max-height: 300px;">
+      <table class="df-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="string">Library</th><th class="int32">Minified File Size (kb)</th><th class="int32">Github Stars</th>
+          </tr>
+        </thead>
+        <tbody>
+         <tr>
+              <th>0</th>
+              <td class="string">Knockout.js</td><td class="int32">17</td><td class="int32">5036</td>
+            </tr>
+          
+            <tr>
+              <th>1</th>
+              <td class="string">Angular.js</td><td class="int32">106</td><td class="int32">24580</td>
+            </tr>
+          
+           <tr>
+              <th>2</th>
+              <td class="string">Ember.js</td><td class="int32">71</td><td class="int32">10368</td>
+            </tr>
+          
+            <tr>
+              <th>3</th>
+              <td class="string">Can.js</td><td class="int32">82</td><td class="int32">928</td>
+            </tr>
+          
+            <tr>
+              <th>4</th>
+              <td class="string">React.js</td><td class="int32">123</td><td class="int32">7015</td>
+            </tr>
+          
+        </tbody>
+      </table>
+      </div>
+
 ---
 ### Calculate descriptive statistics for all numerical columns
 ```
 df.describe().print()
 ```
-```
-//ouput
 
- Shape: (7,2) 
+<div style="overflow: auto; max-height: 300px;">
+    <table class="df-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="float32">Minified File Size (kb)</th><th class="float32">Github Stars</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr>
+            <th>count</th>
+            <td class="float32">7</td><td class="float32">7</td>
+          </tr>
+        
+          <tr>
+            <th>mean</th>
+            <td class="float32">58.071426</td><td class="float32">9464.286133</td>
+          </tr>
+        
+          <tr>
+            <th>std</th>
+            <td class="float32">49.75978</td><td class="float32">9038.434833</td>
+          </tr>
+        
+          <tr>
+            <th>min</th>
+            <td class="float32">1</td><td class="float32">156</td>
+          </tr>
+        
+          <tr>
+            <th>median</th>
+            <td class="float32">71</td><td class="float32">7015</td>
+          </tr>
+        
+          <tr>
+            <th>max</th>
+            <td class="float32">123</td><td class="float32">24580</td>
+          </tr>
+        
+          <tr>
+            <th>variance</th>
+            <td class="float32">2476.035714</td><td class="float32">81693304.23</td>
+          </tr>
+      </tbody>
+    </table>
+    </div>
 
-╔══════════╤═══════════════════╤═══════════════════╗
-║          │ Minified File...  │ Github Stars      ║
-╟──────────┼───────────────────┼───────────────────╢
-║ count    │ 7                 │ 7                 ║
-╟──────────┼───────────────────┼───────────────────╢
-║ mean     │ 58.071426         │ 9464.286133       ║
-╟──────────┼───────────────────┼───────────────────╢
-║ std      │ 49.75978          │ 9038.434833       ║
-╟──────────┼───────────────────┼───────────────────╢
-║ min      │ 1                 │ 156               ║
-╟──────────┼───────────────────┼───────────────────╢
-║ median   │ 71                │ 7015              ║
-╟──────────┼───────────────────┼───────────────────╢
-║ max      │ 123               │ 24580             ║
-╟──────────┼───────────────────┼───────────────────╢
-║ variance │ 2476.035714       │ 81693304.238095   ║
-╚══════════╧═══════════════════╧═══════════════════╝
-```
 ---
 ### The shape of the data, column names, and dtypes
 ```    
@@ -168,22 +277,42 @@ console.log(df.column_names);
 
 df.ctypes.print()   
 ```
+
 ```
-//ouput
 [ 7, 3 ]
 [ 'Library', 'Minified File Size (kb)', 'Github Stars' ]
-╔═════════════════════════╤══════════════════════╗
-║                         │ 0                    ║
-╟─────────────────────────┼──────────────────────╢
-║ Library                 │ string               ║
-╟─────────────────────────┼──────────────────────╢
-║ Minified File Size (kb) │ float32              ║
-╟─────────────────────────┼──────────────────────╢
-║ Github Stars            │ int32                ║
-╚═════════════════════════╧══════════════════════╝
 ```
----
-### Selecting a single column, which yields a Series
+
+<div style="overflow: auto; max-height: 300px;">
+    <table class="df-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="string">0</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr>
+            <th>Library</th>
+            <td class="string">string</td>
+          </tr>
+        
+          <tr>
+            <th>Minified File Size (kb)</th>
+            <td class="string">float32</td>
+          </tr>
+        
+          <tr>
+            <th>Github Stars</th>
+            <td class="string">int32</td>
+          </tr>
+        
+      </tbody>
+    </table>
+    </div>
+
+
 ```
 dfd.read_csv("https://raw.githubusercontent.com/curran/data/gh-pages/jsLibraries/jsLibs.csv")
     .then(df => {
@@ -193,26 +322,55 @@ dfd.read_csv("https://raw.githubusercontent.com/curran/data/gh-pages/jsLibraries
     })
 ```
 
-```
-//output
-╔═══╤══════════════════════╗
-║   │ Library              ║
-╟───┼──────────────────────╢
-║ 0 │ Knockout.js          ║
-╟───┼──────────────────────╢
-║ 1 │ Angular.js           ║
-╟───┼──────────────────────╢
-║ 2 │ Ember.js             ║
-╟───┼──────────────────────╢
-║ 3 │ Can.js               ║
-╟───┼──────────────────────╢
-║ 4 │ React.js             ║
-╟───┼──────────────────────╢
-║ 5 │ Backbone.js          ║
-╟───┼──────────────────────╢
-║ 6 │ Model.js             ║
-╚═══╧══════════════════════╝
-```
+<div style="overflow: auto; max-height: 300px;">
+    <table class="df-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="string">Library</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr>
+            <th>0</th>
+            <td class="string">Knockout.js</td>
+          </tr>
+        
+          <tr>
+            <th>1</th>
+            <td class="string">Angular.js</td>
+          </tr>
+        
+          <tr>
+            <th>2</th>
+            <td class="string">Ember.js</td>
+          </tr>
+        
+          <tr>
+            <th>3</th>
+            <td class="string">Can.js</td>
+          </tr>
+        
+          <tr>
+            <th>4</th>
+            <td class="string">React.js</td>
+          </tr>
+        
+          <tr>
+            <th>5</th>
+            <td class="string">Backbone.js</td>
+          </tr>
+        
+          <tr>
+            <th>6</th>
+            <td class="string">Model.js</td>
+          </tr>
+        
+      </tbody>
+    </table>
+    </div>
+
 ---
 ### Selecting on a multi-axis by label, by slicing, and by query
 ```
@@ -233,47 +391,96 @@ dfd.read_csv("https://raw.githubusercontent.com/curran/data/gh-pages/jsLibraries
         console.log(err);
     })
 ```
-```
-//ouput
+ <div style="overflow: auto; max-height: 300px;">
+        <h3>Selection By Multi-Axis Label</h3>
+    <table class="df-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="string">Library</th><th class="int32">Github Stars</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr>
+            <th>0</th>
+            <td class="string">Knockout.js</td><td class="int32">5036</td>
+          </tr>
+        
+          <tr>
+            <th>1</th>
+            <td class="string">Angular.js</td><td class="int32">24580</td>
+          </tr>
+        
+      </tbody>
+    </table>
+    </div>
+    <div style="overflow: auto; max-height: 300px;">
+        <h3>Selection By Slicing</h3>
+    <table class="df-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="string">Library</th><th class="int32">Github Stars</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr>
+            <th>0</th>
+            <td class="string">Knockout.js</td><td class="int32">5036</td>
+          </tr>
+        
+          <tr>
+            <th>1</th>
+            <td class="string">Angular.js</td><td class="int32">24580</td>
+          </tr>
+        
+          <tr>
+            <th>2</th>
+            <td class="string">Ember.js</td><td class="int32">10368</td>
+          </tr>
+        
+          <tr>
+            <th>3</th>
+            <td class="string">Can.js</td><td class="int32">928</td>
+          </tr>
+        
+      </tbody>
+    </table>
+    </div>
+    <div style="overflow: auto; max-height: 300px;">
+        <h3>Selection By Query</h3>
+    <table class="df-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="string">Library</th><th class="float32">Minified File Size (kb)</th><th class="int32">Github Stars</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr>
+            <th>1</th>
+            <td class="string">Angular.js</td><td class="float32">106</td><td class="int32">24580</td>
+          </tr>
+        
+          <tr>
+            <th>2</th>
+            <td class="string">Ember.js</td><td class="float32">71</td><td class="int32">10368</td>
+          </tr>
+        
+          <tr>
+            <th>5</th>
+            <td class="string">Backbone.js</td><td class="float32">6.5</td><td class="int32">18167</td>
+          </tr>
+        
+      </tbody>
+    </table>
+    </div>
 
- Shape: (2,2) 
 
-╔═══╤═══════════════════╤═══════════════════╗
-║   │ Library           │ Github Stars      ║
-╟───┼───────────────────┼───────────────────╢
-║ 0 │ Knockout.js       │ 5036              ║
-╟───┼───────────────────┼───────────────────╢
-║ 1 │ Angular.js        │ 24580             ║
-╚═══╧═══════════════════╧═══════════════════╝
-
- Shape: (4,2) 
-
-╔═══╤═══════════════════╤═══════════════════╗
-║   │ Library           │ Github Stars      ║
-╟───┼───────────────────┼───────────────────╢
-║ 0 │ Knockout.js       │ 5036              ║
-╟───┼───────────────────┼───────────────────╢
-║ 1 │ Angular.js        │ 24580             ║
-╟───┼───────────────────┼───────────────────╢
-║ 2 │ Ember.js          │ 10368             ║
-╟───┼───────────────────┼───────────────────╢
-║ 3 │ Can.js            │ 928               ║
-╚═══╧═══════════════════╧═══════════════════╝
-
- Shape: (3,3) 
-
-╔═══╤═══════════════════╤═══════════════════╤═══════════════════╗
-║   │ Library           │ Minified File...  │ Github Stars      ║
-╟───┼───────────────────┼───────────────────┼───────────────────╢
-║ 1 │ Angular.js        │ 106               │ 24580             ║
-╟───┼───────────────────┼───────────────────┼───────────────────╢
-║ 2 │ Ember.js          │ 71                │ 10368             ║
-╟───┼───────────────────┼───────────────────┼───────────────────╢
-║ 5 │ Backbone.js       │ 6.5               │ 18167             ║
-╚═══╧═══════════════════╧═══════════════════╧═══════════════════╝
-```
-
-*There are many mathematical [operations](https://danfo.jsdata.org/api-reference) we can perform over the dataframe object.*
+#### There are many mathematical [operations](https://danfo.jsdata.org/api-reference) we can perform over the dataframe object.
 ---
 ### Danfo supports plotting
 
