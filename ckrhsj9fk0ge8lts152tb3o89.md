@@ -149,7 +149,8 @@ with models.DAG(
 
 ## Persistent Volume & Persistent Volume Claim
 
-![Made Using Canva](https://cdn.hashnode.com/res/hashnode/image/upload/v1627132252123/d_N52Pc7SB.gif)*Made Using Canva*
+
+![POD.gif](https://cdn.hashnode.com/res/hashnode/image/upload/v1627660881589/dsLRSI2y2.gif)
 
 **Persistent Volume**, think of it as a cluster resource to store data or an abstract component which take the storage from the actual physical storage, like local hard drive, external NFS server, or a cloud storage. Kubernetes actually doesn’t care about storage so it gives us persistent volume component as an interface to the actual storage that a **maintainer** or **adminstrator** have to configured it and take care of . There are [many types of persistent volumes ](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#types-of-persistent-volumes)that kubernetes supports. Persistent Volumes are not namespaced, that means they are accessible to the whole cluster.
 
